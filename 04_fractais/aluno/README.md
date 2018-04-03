@@ -1,4 +1,4 @@
-#04_fractais
+# 04_fractais
 * O que voce fez?
 	* Tentei adaptar o algoritmo da arvore, refiz o codigo do triangulo, tentei modificar o gelo, colocar com cores diferentes, o trigo fiz baseado nas video aulas do semestre passado, fazendo algumas alteracoes, como na espessura, e estava tentando fazer os quadrados e os circulos. 
 * Com quem e como você fez?
