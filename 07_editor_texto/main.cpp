@@ -26,25 +26,17 @@ struct Ambiente{
     }
 };
 
-struct ListAmbientes{
-    list<Ambiente> ambientes;
-    list<Ambiente>::iterator cursorAmb;
-    ListAmbientes(){
-        cursorAmb = ambientes.end();
-    }
-};
-
 int main()
 {
     Ambiente amb;
-    ListAmbientes ambs;
 
     amb.texto.push_back('a');
     amb.texto.push_back('m');
     amb.texto.push_back('o');
     amb.texto.push_back('r');
 
-    ambs.ambientes.push_back(amb);
+    list<Ambiente>::iterator ambientes;
+    //ambientes.push_back(amb);
 
     sf::RenderWindow janela(sf::VideoMode(800, 600), "Janela");
 
@@ -57,7 +49,6 @@ int main()
             if(event.type == sf::Event::KeyPressed){
                 if(event.key.control && event.key.code == sf::Keyboard::Z){
                     cout << "control z" << endl;
-                    ambs.cursorAmb--;
                 }
                 else if(event.key.control && event.key.code == sf::Keyboard::R){
                     cout << "control r" << endl;
@@ -66,8 +57,8 @@ int main()
                    (event.key.code <= sf::Keyboard::Z)){
                     char tecla = (event.key.code - sf::Keyboard::A) + 'a';
                     cout << tecla << endl;
+                    //ambientes->texto.insert(amb.cursor,tecla);
                     amb.texto.insert(amb.cursor, tecla);
-                    ambs.ambientes.push_back(amb);
                 }
                 else if((event.key.code == sf::Keyboard::Space)){
                     cout << "espaco" << endl;
@@ -82,13 +73,12 @@ int main()
                 else if(event.key.code == sf::Keyboard::BackSpace){
                     cout << "backspace" << endl;
                     if(amb.cursor != amb.texto.begin())
-                        amb.texto.erase(amb.cursor++, amb.cursor--);
+                        amb.cursor = amb.texto.erase(--amb.cursor);
                 }
                 else if(event.key.code == sf::Keyboard::Delete){
                     cout << "delete" << endl;
                     if(amb.cursor != amb.texto.end()){
-                        amb.cursor++;
-                        amb.texto.erase(amb.cursor++, amb.cursor--);
+                        amb.cursor = amb.texto.erase(amb.cursor);
                     }
                 }
                 else if(event.key.code == sf::Keyboard::Left){
