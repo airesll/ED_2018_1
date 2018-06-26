@@ -1,11 +1,11 @@
 # hashLista
 * O que voce fez?
-** Refiz todo o codigo, corrigindo alguns erros, implementei o metodo mostrar.
+  * Refiz todo o codigo, corrigindo alguns erros, implementei o metodo mostrar.
 * Com quem voce fez?
-** Na sala com o professor e em casas sozinho.
+  * Na sala com o professor e em casas sozinho.
 * O que aprendeu e sabe fazer?
-** A trabalhar com um vetor que armazena listas, como inserir, deletar, buscar, mostrar.
+  * A trabalhar com um vetor que armazena listas, como inserir, deletar, buscar, mostrar.
 * O que tem dificuldade ainda?
-** Em entender mais sobre passagem por ponteiro e por referencia.
+  * Em entender mais sobre passagem por ponteiro e por referencia.
 * Quanto tempo levou pra fazer a atividade?
-** 2 horas.
+  * 2 horas.
