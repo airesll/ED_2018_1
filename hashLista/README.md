@@ -9,3 +9,5 @@
   * Em entender mais sobre passagem por ponteiro e por referencia.
 * Quanto tempo levou pra fazer a atividade?
   * 2 horas.
+* observacoes
+ * Meu notebook partiu dessa para outra, entao estou programando em um improvisado, e com o CodeBlocks
