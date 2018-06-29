@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 #include <vector>
 #include <tuple>
@@ -156,12 +148,12 @@ int main(){
 	    cout << "erro!!" << endl;
 	    
 	cout << "capacidade: " << vetHash.capacity() << endl;
-    cout << "total de elementos: " << vetHash.size() << endl;
+    	cout << "total de elementos: " << vetHash.size() << endl;
     
-    cout << "aumentando o tamanho para 6:" << endl; 
+    	cout << "aumentando o tamanho para 6:" << endl; 
 	vetHash.resize(6);
 	cout << "capacidade: " << vetHash.capacity() << endl;
-    cout << "total de elementos: " << vetHash.size() << endl;
+   	cout << "total de elementos: " << vetHash.size() << endl;
 
 	return 0;
 }
